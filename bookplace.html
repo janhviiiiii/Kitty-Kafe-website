@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Place - Kitty Kafé</title>
+    <link rel="stylesheet" href="bookplace.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<img class="bg-img" src="images/cafe-place1.jpg" alt="bg-img">
+
+<header>
+        <nav class="nav">
+            <div class="menu left-menu">
+                <a id="home" href="home.html">HOME</a>
+                <a id="menu" href="menu.html">MENU</a>
+                <a id="adopt" href="#">ADOPT A CAT</a>
+            </div>
+            <div class="logo">
+                <!-- <img src="images/t_logo.png" style="height: 0px;"> -->
+            </div>
+            <div class="menu right-menu">
+                <a id="donate" href="#">DONATE</a>
+                <a id="account" href="#">MY ACCOUNT</a>
+                <a id="aboutus" href="aboutus.html">ABOUT US/FAQs</a>
+            </div>
+        </nav>
+
+        <div class="div-main">
+        <main class="main-section">
+            <section class="reserve-section">
+                <h1 id="heading">Reserve</h1>
+                <div class="reserve-form">
+                    
+                    
+                        <div class="div-form">
+                            <form class="form" action="#">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                                
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" required>
+                                
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" required>
+                                
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message"></textarea>
+                                
+                                <button id="btn-reserve" type="submit">Book a place</button>
+                            </form>
+                        </div>
+
+                        <div class="cat-image">
+                            <img id="cat-img" src="images/crown-cat3.jpg" alt="Cat with Crown">
+                        </div>
+                    </div>
+             </section>
+        </main>
+    </div>
+</header>
+</body>
+</html>
