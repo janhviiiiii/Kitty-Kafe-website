@@ -23,6 +23,7 @@ body {
     justify-content: center;
 }
 
+/* nav  */
 .nav {
     background: rgba(64, 64, 64, 0.423);
     /* padding: 1rem; */
@@ -147,6 +148,8 @@ body {
     gap: 3rem;
 }
 
+
+/* main section */
 .main-section{
     padding: 6rem;
 }
