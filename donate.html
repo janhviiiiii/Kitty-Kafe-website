@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Kitty Kafé</title>
+    <link rel="stylesheet" href="donate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <nav class="nav">
+                <div class="menu left-menu">
+                    <a id="home" href="home.html">HOME</a>
+                    <a id="menu" href="menu.html">MENU</a>
+                    <a id="adopt" href="#">ADOPT A CAT</a>
+                </div>
+                <div class="logo"></div>
+                <div class="menu right-menu">
+                    <a id="donate" href="donate.html">DONATE</a>
+                    <a id="account" href="#">MY ACCOUNT</a>
+                    <a id="aboutus" href="aboutus.html">ABOUT US/FAQs</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="donation-intro">
+            <h1>Support Kitty Kafé</h1>
+            <p>Your donations help us provide care and find homes for our adorable resident cats. Thank you for your generosity!</p>
+        </section>
+
+        <section class="ways-to-donate">
+            <h2>Ways to Donate</h2>
+            <ul>
+                <li><strong>One-Time Donation:</strong> Make a one-time contribution to support our mission.</li>
+                <li><strong>Monthly Donation:</strong> Become a monthly donor and provide ongoing support.</li>
+                <li><strong>In-Kind Donations:</strong> Donate supplies such as cat food, toys, and bedding.</li>
+            </ul>
+        </section>
+
+        <section class="donation-form">
+            <h2>Make a Donation</h2>
+            <form action="donate.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="amount">Donation Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank-transfer">Bank Transfer</option>
+                </select>
+
+                <button type="submit">Donate</button>
+            </form>
+        </section>
+
+        <section class="donation-tiers">
+            <h2>Donation Tiers</h2>
+            <div class="tier">
+                <h3>$10</h3>
+                <p>Feeds a cat for a week.</p>
+            </div>
+            <div class="tier">
+                <h3>$50</h3>
+                <p>Covers veterinary care for one cat.</p>
+            </div>
+            <div class="tier">
+                <h3>$100</h3>
+                <p>Provides shelter and care for a month.</p>
+            </div>
+        </section>
+
+        <section class="success-stories">
+            <h2>Success Stories</h2>
+            <p>Meet some of the cats who have found their forever homes thanks to your donations.</p>
+            <!-- Add stories here -->
+        </section>
+
+        <section class="corporate-sponsorship">
+            <h2>Corporate Sponsorship</h2>
+            <p>Learn how your business can partner with Kitty Kafé to support our mission.</p>
+        </section>
+
+        <section class="volunteer-opportunities">
+            <h2>Volunteer Opportunities</h2>
+            <p>Donate your time and help us care for our resident cats. <a href="volunteer.html">Sign up as a volunteer</a>.</p>
+        </section>
+
+        <section class="contact-info">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, please reach out to us at <a href="mailto:info@kittykafe.com">info@kittykafe.com</a> or call us at (123) 456-7890.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-head">
+            <img id="footer-logo" src="images/t_logo.png" alt="logo">
+            <a id="homee" href="home.html">HOME</a>
+            <a id="menuu" href="menu.html">MENU</a>
+            <a id="adoptt" href="adopt.html">ADOPT A CAT</a>
+            <a id="donatee" href="donate.html">DONATE</a>
+            <a id="accountt" href="account.html">MY ACCOUNT</a>
+            <a id="aboutuss" href="aboutus.html">ABOUT US/FAQs</a>
+        </div>
+    
+        <div class="footer-container">
+            <div class="info-section">
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>J Bunglow, Street 03, Bandra, Mumbai</span>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <span>11 am - 10 pm</span>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+91 809579120</span>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>kittykafe@gmail.com</span>
+                </div>
+            </div>
+            
+    
+            <div class="social-section">
+                <p><br>Contact us in any way convinence for you.<br>
+                Also, do not forget to follow us in social media<br><br></p>
+                <div class="icons">
+                <a href="https://www.facebook.com/kittykafe"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/kittykafe"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.x.com/kittykafe"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            </div>
+    
+        </div>
+    
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
