@@ -18,7 +18,7 @@ body {
 .bg-image{
     opacity: 0.2;
     width: 100%;
-    height: auto;       
+    height: auto;
     display: flex;
     justify-content: center;
 }
@@ -42,12 +42,12 @@ body {
 .nav-container{
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, black 12%, rgba(0, 0, 0, 0) 50%), url('images/donate.jpg');
+    background: linear-gradient(to right, black 20%, rgba(0, 0, 0, 0) 50%), url('images/cat16.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment:fixed;
     height: 100vh;
-    background-position: right;
+    background-position: center;
 }
 
 .menu-text{   
@@ -112,7 +112,7 @@ body {
 }
    
 
-#donate{
+#faq{
     background-color: #ffb770;
     color: black;
     padding: 1rem;
@@ -123,7 +123,7 @@ body {
 }
 
 
-.donate-text{   
+.faq-text{   
     font-family: 'Mali', cursive;
     font-size: 6rem;
     font-weight: bolder;
@@ -143,8 +143,9 @@ body {
     margin-left: 3rem;
     display: flex;
     justify-content: flex-start;
-    text-align: ce;
+    text-align: left;
     gap: 3rem;
+    font-size: 1.25rem;
     animation: msg-animation 1s ease-in-out;
 }
 
@@ -159,91 +160,130 @@ body {
 }
 
 
-/* Main section */
-.main-section {
-    margin-top: -3rem;
+/* main section */ 
+.main-section{
     padding: 6rem;
 }
 
-.donate-header h1 {
+.main-heading{
     font-family: 'Mali', cursive;
     font-size: 4rem;
     color: #ee8c2f;
     font-weight: bolder;
 }
 
-.donate-header p {
+#msg{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
     font-size: 1.5rem;
-    color: black;
     margin-top: -1rem;
-    /* margin: 2rem; */
+    text-align: justify;
 }
 
-.donation-options {
-    display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 6rem;
-    align-items: center;
-    font-size: large;
-    color: black;
-}
-
-.donation-method {
-    margin-top: 5rem;
+.faq-container {
     background-color: #fff;
-    padding: 1rem;
-    border-radius: 9%;
-    box-shadow: 0 2px 4px rgba(227, 144, 35, 0.867);
-    display: flex;
-    flex-direction: column;
-    max-width: 60rem;
+    /* padding: 20px; */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-#left-section{
-    margin-right: 40rem;
-    align-items: center;
-    justify-content: flex-start;
+
+.faq-section {
+    margin-bottom: 40;
+    margin-top: 6rem;
 }
 
-#right-section{
-    margin-top: -8rem;
-    margin-left: 40rem;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-#left-section2{
-    margin-top: -8rem;
-    margin-right: 40rem;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-#right-section2{
-    margin-top: -8rem;
-    margin-left: 40rem;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.donation-method h3 {
+.faq-section h2 {
     font-family: 'Mali', cursive;
+    font-size: 3rem;
+    font-weight: bold;
     color: #ee8c2f;
-    margin-top: 1rem;
-    font-size: bolder;
-    font-size: 3.1rem;
+    margin-bottom: 10px;
+    color: #ff9800;
+    border-bottom: 0.20rem solid #ffb770;
+    padding-bottom: 1rem;
+}
+
+.faq-item {
     margin-bottom: 1.5rem;
-
 }
 
-.donation-method p {
+.faq-question {
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: 0.20rem solid #ee8c2f;
+}
+
+.faq-question:hover {
+    background-color: #ffb770;
+}
+
+.faq-answer {
+    display: none;
+    max-width: 50%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* contact form for more infp */
+
+.contact-form {
+    margin-top: 4rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+    font-family: 'Mali', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ee8c2f;
+    margin-bottom: 10px;
+    color: #ff9800;
+    /* border-bottom: 0.20rem solid #ffb770; */
+    padding-bottom: 1rem;   
+    margin-bottom: 2rem;
+}
+
+.contact-form label {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
     color: black;
-    margin: 0.5rem 0;
-    font-size: 1.4rem;
 }
 
-.donation-method a{
+.contact-form input,
+.contact-form textarea {
+    width: 50%;
+    padding: 0.6rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    
+}
+
+.contact-form button {
     font-family: 'Mali', cursive;
+    width: 14rem;
+    text-align: center;
     font-weight: bold;
     background-color: #ffb770;
     color: #110e03;
@@ -253,38 +293,16 @@ body {
     border-bottom-right-radius: 50px;
     font-size: 1.4rem;
     cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
     border: 0.25rem solid #ee8c2f;
-    margin-top: 1.1rem;
-    margin-bottom: 1.1rem;
-    text-decoration: none;
 }
 
-.donation-method a:hover {
+.contact-form button:hover {
     background-color: #ee8c2f;
     color: white;
 }
 
-.donation-method button {
-    font-family: 'Mali', cursive;
-    font-weight: bold;
-    background-color: #ffb770;
-    color: #110e03;
-    padding: 1rem 2rem;
-    border: none;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    font-size: 1.4rem;
-    cursor: pointer;
-    border: 0.25rem solid #ee8c2f;
-    margin-top: 1.1rem;
-    margin-bottom: 1.1rem;
-}
-
-.donation-method button:hover {
-    background-color: #ee8c2f;
-    color: white;
-}
-
+/* enlarge animation keyframe */
 @keyframes enlarge {
     0% {
         transform:scale(1);

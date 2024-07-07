@@ -50,7 +50,7 @@ body {
 .nav-container{
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, black 20%, rgba(0, 0, 0, 0) 50%), url('images/menucoffee.png');
+    background: linear-gradient(to right, black 20%, rgba(0, 0, 0, 0) 50%), url('images/menu.jpg');
     list-style-image: -moz-element();
     background-repeat: no-repeat;
     background-size:cover;
@@ -63,8 +63,6 @@ body {
     /* background-size: cover; or contain */
     /* width: 100%; */
     /* height: 70vh; */
-
-
 }
 
 .menu-text{   
@@ -78,6 +76,29 @@ body {
     align-items: center;
     margin-top: 10rem;
     margin-left: 3rem;
+}
+
+.tagline{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-left: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 3rem;
+    font-size: 1.25rem;
+    animation: msg-animation 1s ease-in-out;
+}
+
+
+@keyframes msg-animation {
+    0% {
+        transform: translateX(-20%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+    
 }
 
 .logo {
@@ -97,7 +118,6 @@ body {
     padding-left: 12rem; /* Adjust padding to create space for the background image */
     margin-top: 8px;
 }
-
 
 .menu {
     display: flex;
@@ -128,7 +148,6 @@ body {
     size: 10px;
 }
    
-
 #menu{
     background-color: #ffb770;
     color: black;

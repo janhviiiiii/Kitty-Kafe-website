@@ -42,7 +42,7 @@ body {
 .nav-container{
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, black 20%, rgba(0, 0, 0, 0) 50%), url('images/cat100.jpg');
+    background: linear-gradient(to right, black 20%, rgba(0, 0, 0, 0) 50%), url('images/adopt.jpg');
     list-style-image: -moz-element();
     background-repeat: no-repeat;
     background-size:cover;
@@ -145,6 +145,17 @@ body {
     justify-content: flex-start;
     text-align: left;
     gap: 3rem;
+    animation: msg-animation 1s ease-in-out;
+}
+
+@keyframes msg-animation {
+    0% {
+        transform: translateX(-20%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+    
 }
 
 /* main section */
@@ -189,8 +200,6 @@ body {
     margin-right: 1rem;
 }
 
-
-
 /* "About us" link */
 .see-more-aboutus {
     font-family: 'Montserrat', sans-serif;
@@ -211,8 +220,6 @@ body {
     animation: moveRight 3s ease-in-out forwards;
     margin-top: 5rem;
 }
-
-
 
 .see-more-aboutus:hover {
     background-color: #ffb770;
@@ -284,15 +291,18 @@ body {
     margin: 1rem 0;
     padding: 0.5rem 1rem;
     font-family: 'Montserrat', sans-serif;
-    background-color: #ee8c2f;
-    color: white;
+    background-color: #ffb770;
+    color: black;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    border: 0.25rem solid #ee8c2f;
+    transition: background-color 0.4s ease-in-out;
+
 }
 
 .cat-card a:hover {
-    background-color: #ffb770;
+    background-color: #ee8c2f;
+    color: white;
 }
 
 /* footer */

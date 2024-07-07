@@ -124,7 +124,7 @@ body {
     
 }
 
-#msg {
+#tagline {
     font-size: 1.25rem;
     margin-bottom: 2rem;
     color: white;
@@ -155,10 +155,12 @@ body {
     font-size: 1.4rem;
     cursor: pointer;
     transition: background-color 0.4s ease-in-out;
+    border: 0.25rem solid #ee8c2f;
 }
 
 .button button:hover {
     background-color: #ee8c2f;
+    color: white;
 } 
 
 

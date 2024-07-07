@@ -42,10 +42,9 @@ body {
 .nav-container{
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, black 20%, rgba(0, 0, 0, 0) 50%), url('images/cat100.jpg');
-    list-style-image: -moz-element();
+    background: linear-gradient(to right, black 20%, rgba(0, 0, 0, 0) 50%), url('images/aboutus.jpg');
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-attachment:fixed;
     height: 100vh;
     background-position: center;
@@ -123,7 +122,6 @@ body {
     border: 1px dotted white;
 }
 
-
 .aboutus-text{   
     font-family: 'Mali', cursive;
     font-size: 6rem;
@@ -137,17 +135,26 @@ body {
     margin-left: 3rem;
 }
 
-
 .tagline{
     font-family: 'Montserrat', sans-serif;
     color: white;
     margin-left: 3rem;
     display: flex;
     justify-content: flex-start;
-    text-align: center;
+    text-align: left;
     gap: 3rem;
+    animation: msg-animation 1s ease-in-out;
 }
 
+@keyframes msg-animation {
+    0% {
+        transform: translateX(-20%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+    
+}
 
 /* main section */
 .main-section{
