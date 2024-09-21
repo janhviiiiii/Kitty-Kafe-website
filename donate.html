@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Kitty Kafé</title>
+    <link rel="stylesheet" href="donate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <nav class="nav">
+                <div class="menu left-menu">
+                    <a id="home" href="home.html">HOME</a>
+                    <a id="aboutus" href="aboutus.html">ABOUT US</a>  
+                    <a id="menu" href="menu.html">MENU</a>     
+                </div>
+                <div class="logo">
+                    <!-- <img src="images/t_logo.png" style="height: 0px;"> -->
+                </div>
+                <div class="menu right-menu">
+                    <a id="adopt" href="adopt.html">ADOPT A CAT</a>
+                    <a id="donate" href="donate.html">DONATE</a>
+                    <a id="faq" href="faq.html">FAQs</a>
+                </div>
+            </nav>
+
+            <div class="donate-text">Donate</div>
+            <div class="tagline">
+                <p>
+                    Your donations help us provide care and<br> 
+                    find homes for our adorable resident cats. 
+                    <br><br>Thank you for your generosity!
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- new main section -->
+    <main class="main-section">
+        <div class="donate-header">
+            <h1>Support Kitty Kafé</h1>
+            <p>Your generous donations help us rescue, rehabilitate, and rehome cats in need.</p>
+        </div>
+
+        <div class="donation-options">
+            <div class="donation-method" id="left-section">
+                <h3>Donate via NEFT</h3>
+                <p>Account Name: Kitty Kafé</p>
+                <p>Account Number: 1234567890</p>
+                <p>IFSC Code: ABCD0123456</p>
+                <button onclick="copyToClipboard('NEFT')">Copy Details</button>
+            </div>
+
+            <div class="donation-method" id="right-section">
+                <h3>Donate via Cheque</h3>
+                <p>Payable to: Kitty Kafé</p>
+                <p>Mail to: J Bunglow, Street 03, Bandra, Mumbai</p>
+            </div>
+
+            <div class="donation-method" id="left-section2">
+                <h3>Donate via Paytm/UPI</h3>
+                <p>UPI ID: kittykafe@upi</p>
+                <button onclick="copyToClipboard('UPI')">Copy UPI ID</button>
+            </div>
+            <div class="donation-method" id="right-section2">
+                <h3>Amazon Wishlist</h3>
+                <!-- <p>Visit our <a href="https://www.amazon.in/hz/wishlist/ls/DH0Q5ZKOJHXB?ref_=wl_dp_view_your_list" target="_blank">Amazon Wishlist</a> to donate items directly.</p> -->
+                <p>Visit our Amazon Wishlist to donate items directly.</p>
+                <a id="amazon-wishlist" href="https://www.amazon.in/hz/wishlist/ls/DH0Q5ZKOJHXB?ref_=wl_dp_view_your_list" target="_blank">Amazon Wishlist</a></a>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="footer-head">
+            <img id="footer-logo" src="images/t_logo.png" alt="logo">
+            <a id="homee" href="home.html">HOME</a>
+            <a id="aboutuss" href="aboutus.html">ABOUT US</a>
+            <a id="menuu" href="menu.html">MENU</a>
+            <a id="adoptt" href="adopt.html">ADOPT A CAT</a>
+            <a id="donatee" href="donate.html">DONATE</a>
+            <a id="faqq" href="faq.html">FAQs</a>
+        </div>
+    
+        <div class="footer-container">
+            <div class="info-section">
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <a href="address: J Bunglow, Street 03, Bandra, Mumbai" style="color: white; text-decoration: none;"><span>J Bunglow, Street 03, Bandra, Mumbai</span></a>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <span>11 am - 10 pm</span>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel: +918097975840" style="color: white; text-decoration: none;"><span>+91 8097975840</span></a>                    
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto: kittykafe@gmail.com" style="color: white; text-decoration: none;"><span>kittykafe@gmail.com</span></a>
+                </div>
+            </div>
+            
+    
+            <div class="social-section">
+                <p><br>Contact us in any way convinence for you.<br>
+                Also, do not forget to follow us in social media<br><br></p>
+                <div class="icons">
+                <a href="https://www.facebook.com/kittykafe"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/kittykafe"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.x.com/kittykafe"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            </div>
+    
+        </div>
+    
+    </footer>
+
+    <script src="donate.js"></script>
+</body>
+</html>

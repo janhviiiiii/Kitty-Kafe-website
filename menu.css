@@ -1,0 +1,422 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; 
+    /* background-image: url('images/cat-cafe-menu.webp'); */
+    /* opacity: 0.2; */
+}
+
+
+
+.bg-img{
+    opacity: 0.2;
+    position:fixed;
+    background-repeat: repeat;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
+.bg-image{
+    opacity: 0.2;
+    /* position:fixed; */
+    /* background-repeat: repeat; */
+    /* left: 0;
+    top: 0; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.nav {
+    background: rgba(64, 64, 64, 0.423);
+    /* padding: 1rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 8rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, black 20%, rgba(0, 0, 0, 0) 50%), url('images/menu.jpg');
+    list-style-image: -moz-element();
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    height: 100vh;
+    /* color: wheat; */
+
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; or contain */
+    /* width: 100%; */
+    /* height: 70vh; */
+}
+
+.menu-text{   
+    font-family: 'Mali', cursive;
+    font-size: 6rem;
+    font-weight: bolder;
+    color:white;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    margin-left: 3rem;
+}
+
+.tagline{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-left: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 3rem;
+    font-size: 1.25rem;
+    animation: msg-animation 1s ease-in-out;
+}
+
+
+@keyframes msg-animation {
+    0% {
+        transform: translateX(-20%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+    
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Mali', cursive;
+    background-image: url('images/t_logo.png');
+    background-repeat: no-repeat;
+    background-size: 10rem;
+    background-position: left center; /* Align the background image */
+    font-size: 7rem; /* Adjust font size to fit with background image */
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    height: 200px;
+    padding-left: 12rem; /* Adjust padding to create space for the background image */
+    margin-top: 8px;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+    flex: 1;
+    justify-content: center;
+}
+
+.left-menu,
+.right-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #ffb770;
+    color: #110e03;
+    size: 10px;
+}
+   
+#menu{
+    background-color: #ffb770;
+    color: black;
+    padding: 1rem;
+    text-decoration: underline;
+    text-shadow: #555;
+    font-weight: bolder;
+    border: 1px dotted white;
+}
+
+.menu-container {
+    display: flex;
+    /* padding: 2rem; */
+    padding-bottom: 1rem;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.menu-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/cat-cafe-menu.webp');
+    background-repeat: repeat;
+    opacity: 0.2; /* Adjust the opacity here */
+    z-index: -1; /* Ensure the background is behind the content */
+}
+
+.images-section,
+.menu-section {
+    position: relative;
+    z-index: 1;
+}
+
+
+.images-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 2rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+
+
+#cat-img, #coffee-img, #cat-coffee {
+    width: 20rem;
+    border-radius: 15px;
+    position: relative;
+}
+
+#cat-img {
+    height: 25rem;
+    margin-top: 8rem;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    z-index: 1;
+}
+
+#coffee-img {
+    height: 20rem;
+    top: -130px;
+    left: 195px;
+    border: 6.5px double #ffb770;
+    border-style:double;
+    border-bottom-right-radius: 15%;
+    border-top-right-radius: 15%;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    z-index: 3;
+}
+
+#cat-coffee {
+    height: 17rem;
+    top: -290px;
+    left: 0px;
+    margin-top: 4rem;
+    margin-left: 0rem;
+    border-bottom-right-radius: 15%;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 15%;
+    z-index: 2;
+}
+
+.menu-section {
+    display: flex;
+    
+}
+
+.menu-title {
+    font-family: 'Mali', cursive;
+    font-size: 4.5rem;
+    color: transparent;
+    padding-right: 1rem;
+    padding-top: 2em;
+}
+
+.menu-category {
+    font-family: 'Mali', cursive;
+    font-size: 2rem;
+    color: #ee8c2f;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.menu-list {
+    list-style-type:disc;
+    font-size: medium;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    padding: 0.5rem 0;
+    padding-bottom: 2.5rem;
+    border-bottom: 5px solid #ffb770;
+}
+
+.menu-item {
+    font-weight: bold;
+    padding-right: 0.5rem;
+    color: black;
+    align-items: left;
+}
+
+.menu-description {
+    color: #1a1a1a;
+    float: right;      
+  
+}
+
+ .main-menu{
+    display:flex;
+    max-width: 200px;
+    margin-left: 1rem;
+    justify-content:space-between;
+    padding: 0rem;
+ }
+
+ .col1{
+    display: flex;
+    flex-direction: column;
+    
+
+ }
+
+ .col2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+ }
+
+ .col3{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+ }
+
+
+/* footer */
+footer {
+    /* background-color: black; */
+    color: white;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, black 80%, rgba(0, 0, 0, 0) 100%), url('images/cat14.jpg');
+    /* background-size: cover; */
+    /* background-position: center; */
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+}
+
+.footer-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 2rem;
+    margin-right: 40rem;
+}
+
+#footer-logo {
+    width: 15rem;
+    height: 15rem;
+    margin-left: auto;
+}
+
+.footer-head a {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border: none;
+    background-color: transparent;
+    margin: 0 1rem;
+}
+
+.footer-head a:hover{
+    animation: enlarge forwards 0.2s;
+}
+
+
+@keyframes enlarge {
+    0% {
+        transform:scale(1);
+    }
+    100% {
+        transform: scale(1.3);
+    }   
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 1rem 2rem;
+    border-top: 1px solid #ffb770;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-right: 40rem;
+}
+
+.social-section .icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-section a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.social-section p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+.fa-location-dot, .fa-clock, .fa-phone, .fa-envelope, .fa-facebook, .fa-instagram, .fa-twitter {
+    font-size: 1.6rem;
+}
