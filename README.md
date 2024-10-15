@@ -89,6 +89,7 @@ For any questions, feedback, or inquiries, please feel free to reach out:
 
 - **Email:** janhvibaraskar03@gmail.com  
 - **GitHub:** [janhviiiiii](https://github.com/janhviiiiii)
+- **Linkedin:** [janhvi-baraskar](https://www.linkedin.com/in/janhvi-baraskar)
 
 Thank you for your interest in the **Kitty Kafé** website!
 
